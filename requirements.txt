@@ -1,0 +1,8 @@
+datasets
+pandas
+numpy
+faiss-cpu
+torch
+transformers
+tqdm
+streamlit
