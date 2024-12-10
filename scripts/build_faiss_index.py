@@ -1,5 +1,3 @@
-# scripts/build_faiss_index.py
-
 import json
 import numpy as np
 import faiss
@@ -21,7 +19,13 @@ def main():
     index.add(vectors)
 
     faiss.write_index(index, INDEX_FILE)
-    meta = [{"id": d["id"], "filepath": d["filepath"], "repo": d["repo"], "url": d["url"], "func_name": d["func_name"]} for d in emb_data]
+    meta = [{
+        "id": d["id"], 
+        "filepath": d["filepath"], 
+        "repo": d["repo"], 
+        "url": d["url"], 
+        "func_name": d["func_name"]
+    } for d in emb_data]
 
     with open(METADATA_FILE, 'w') as f:
         json.dump(meta, f)

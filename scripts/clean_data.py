@@ -1,9 +1,10 @@
-# scripts/clean_data.py
-
 from datasets import load_dataset
 import pandas as pd
+import os
 
 def main():
+    os.makedirs("data", exist_ok=True)
+
     # Load the Python subset of CodeSearchNet
     dataset = load_dataset("code_search_net", "python", trust_remote_code=True)
     
