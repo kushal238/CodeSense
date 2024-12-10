@@ -1,1 +1,3 @@
 # CodeSense
+
+"CodeSense" is a semantic search engine designed to enhance the discoverability of code documentation by leveraging natural language processing (NLP) and advanced search techniques. Unlike traditional keyword-based search systems, CodeSense utilizes word embeddings and semantic search algorithms to understand the intent behind a developer’s query, providing more relevant and contextually appropriate documentation and code snippets. This tool aims to streamline the coding process by making it easier for developers to find the right information quickly, even when they don’t know the exact terms to search for.
