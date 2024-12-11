@@ -2,3 +2,5 @@
 .venv/
 
 data/embeddings/*
+
+data/cleaned_train_sample.csv
