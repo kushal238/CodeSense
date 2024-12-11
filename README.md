@@ -25,7 +25,7 @@ Create embeddings for the cleaned dataset using the pre-trained SentenceTransfor
 
 ```python embed.py```
 
-Input: data/cleaned_train_sample.csv.
+Input: Cleaned dataset
 
 Output: Embeddings 
 
@@ -35,13 +35,12 @@ Build a FAISS index from the generated embeddings for fast retrieval during sear
 
 ```python build_faiss_index.py```
 
-Input: data/embeddings/python_embeddings.json.
+Input: Embeddings
 
 Output:
 
-FAISS index
-
-Metadata
+1. FAISS index
+2. Metadata
 
 **4. Run the Query Interface**
 
