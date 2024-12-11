@@ -8,43 +8,43 @@
 
 Clean the raw dataset to remove duplicates, retain Python files, and preprocess for semantic search.
 
-python data_cleaning.py
+```python data_cleaning.py```
 
-Input: Raw dataset file path (e.g., data/raw_train_sample.csv).
+Input: Raw dataset
 
-Output: Cleaned dataset saved at data/cleaned_train_sample.csv.
+Output: Cleaned dataset
 
 **2. Generate Embeddings**
 
 Create embeddings for the cleaned dataset using the pre-trained SentenceTransformer model.
 
-python embed.py
+```python embed.py```
 
 Input: data/cleaned_train_sample.csv.
 
-Output: Embeddings saved at data/embeddings/python_embeddings.json.
+Output: Embeddings 
 
 **3. Build FAISS Index**
 
 Build a FAISS index from the generated embeddings for fast retrieval during search.
 
-python build_faiss_index.py
+```python build_faiss_index.py```
 
 Input: data/embeddings/python_embeddings.json.
 
 Output:
 
-FAISS index at data/indexes/faiss_index.bin.
+FAISS index
 
-Metadata at data/metadata/faiss_metadata.json.
+Metadata
 
 **4. Run the Query Interface**
 
 Run the user interface to perform semantic code search.
 
-python ui.py
+```python ui.py```
 
 Input: User-provided query via terminal or UI.
 
-Output: Top-k similar code snippets with metadata (e.g., file path, repo URL).
+Output: Top-k similar code snippets with metadata
 
