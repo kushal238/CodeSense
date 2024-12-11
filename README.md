@@ -2,9 +2,9 @@
 
 "CodeSense" is a semantic search engine designed to enhance the discoverability of code documentation by leveraging natural language processing (NLP) and advanced search techniques. Unlike traditional keyword-based search systems, CodeSense utilizes word embeddings and semantic search algorithms to understand the intent behind a developer’s query, providing more relevant and contextually appropriate documentation and code snippets. This tool aims to streamline the coding process by making it easier for developers to find the right information quickly, even when they don’t know the exact terms to search for.
 
-Steps to Run
+## Steps to Run
 
-1. Clean the Dataset
+**1. Clean the Dataset**
 
 Clean the raw dataset to remove duplicates, retain Python files, and preprocess for semantic search.
 
@@ -14,7 +14,7 @@ Input: Raw dataset file path (e.g., data/raw_train_sample.csv).
 
 Output: Cleaned dataset saved at data/cleaned_train_sample.csv.
 
-2. Generate Embeddings
+**2. Generate Embeddings**
 
 Create embeddings for the cleaned dataset using the pre-trained SentenceTransformer model.
 
@@ -24,7 +24,7 @@ Input: data/cleaned_train_sample.csv.
 
 Output: Embeddings saved at data/embeddings/python_embeddings.json.
 
-3. Build FAISS Index
+**3. Build FAISS Index**
 
 Build a FAISS index from the generated embeddings for fast retrieval during search.
 
@@ -38,7 +38,7 @@ FAISS index at data/indexes/faiss_index.bin.
 
 Metadata at data/metadata/faiss_metadata.json.
 
-4. Run the Query Interface
+**4. Run the Query Interface**
 
 Run the user interface to perform semantic code search.
 
